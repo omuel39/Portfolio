@@ -1,0 +1,281 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color: white;
+}
+
+.nav-link {
+  color: black;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: white;
+  background-color: black;
+}
+
+.navbar-brand {
+  font-size: 1.25rem;
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* Main section */
+.main {
+  background: url(./images/main-background.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 95vh;
+}
+
+.main h3 {
+  font-size: 4.4rem;
+  font-weight: 700;
+}
+
+.main h6 {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  line-height: 1;
+  border-bottom: 3px solid rgb(233, 20, 109);
+  width: 40%;
+}
+
+.main .bt1 {
+  height: 55px;
+  width: 138px;
+  background-color: rgb(233, 20, 109);
+  color: white;
+  outline: none;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-right: 1rem;
+  transition: background-color 0.5s ease;
+}
+
+.main .bt1:hover {
+  background-color: rgb(202, 18, 95);
+}
+
+.main .bt2 {
+  height: 55px;
+  width: 138px;
+  background-color: transparent;
+  color: rgb(233, 20, 109);
+  outline: none;
+  border: 1px solid rgb(233, 20, 109);
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.main .bt2:hover {
+  background-color: rgb(233, 20, 109);
+  color: white;
+}
+
+/* About section */
+.about img {
+  -webkit-box-shadow: 6px 4px 41px -24px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 6px 4px 41px -24px rgba(0, 0, 0, 0.75);
+  box-shadow: 6px 4px 41px -24px rgba(0, 0, 0, 0.75);
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+/* Progress bar */
+.progress {
+  background-color: rgb(223, 219, 219);
+  justify-content: flex-start;
+  border-radius: 50px;
+  align-items: center;
+  position: relative;
+  display: flex;
+  height: 25px;
+  width: 100%;
+  -webkit-box-shadow: inset 23px 40px 97px -159px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: inset 23px 40px 97px -159px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 23px 40px 97px -159px rgba(0, 0, 0, 0.75);
+}
+
+.progress p {
+  color: white;
+  padding: 12px;
+}
+
+.pro-value1,
+.pro-value2,
+.pro-value3,
+.pro-value4 {
+  border-radius: 50px;
+  background-color: black;
+  height: 25px;
+  width: 0;
+}
+
+.pro-value1 {
+  animation: load1 3s normal forwards;
+}
+
+.pro-value2 {
+  animation: load2 3s normal forwards;
+}
+
+.pro-value3 {
+  animation: load3 3s normal forwards;
+}
+
+.pro-value4 {
+  animation: load4 3s normal forwards;
+}
+
+/* Animation keyframes */
+@keyframes load1 {
+  0% { width: 0; }
+  100% { width: 98%; }
+}
+
+@keyframes load2 {
+  0% { width: 0; }
+  100% { width: 70%; }
+}
+
+@keyframes load3 {
+  0% { width: 0; }
+  100% { width: 98%; }
+}
+
+@keyframes load4 {
+  0% { width: 0; }
+  100% { width: 65%; }
+}
+
+/* Buttons */
+.btn1 {
+  height: 40px;
+  width: 145px;
+  outline: none;
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 4px;
+  transition: 0.5s;
+}
+
+.btn1:hover {
+  background-color: transparent;
+  color: black;
+  border: 1px solid black;
+}
+
+.btn2 {
+  height: 40px;
+  width: 145px;
+  outline: none;
+  border: 1px solid black;
+  background-color: transparent;
+  color: black;
+  border-radius: 4px;
+  transition: 0.5s;
+}
+
+.btn2:hover {
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+/* Services section */
+.card {
+  border: none;
+  outline: none;
+  -webkit-box-shadow: -8px 6px 89px -65px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -8px 6px 89px -65px rgba(0, 0, 0, 0.75);
+  box-shadow: -8px 6px 89px -65px rgba(0, 0, 0, 0.75);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card p {
+  color: gray;
+}
+
+.circle {
+  height: 70px;
+  width: 70px;
+  background-color: lightgray;
+  color: black;
+  padding: 12px;
+  font-size: 30px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 20px;
+  transition: 0.5s;
+}
+
+.card:hover .circle {
+  background-color: black;
+  color: white;
+  transition: 0.5;
+}
+
+.text-white {
+  color: white !important;
+}
+
+/* portfolio */
+.control ul li {
+  list-style: none;
+  background-color: black;
+  padding: 5px 15px;
+  color: white;
+  display: inline-block;
+  cursor: pointer;
+  letter-spacing: 2px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.item{
+  position: relative;
+}
+
+.control ul li:hover{
+  background-color: white;
+  color: black;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+}
+
+.item span{
+  position: absolute;
+  top: 40px;
+  left: 45%;
+  font-size: 40px;
+  color: black;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s, transform 0.5s;
+  
+}
+
+.item:hover span{
+  opacity: 1;
+  transform: translateY(0);
+}
